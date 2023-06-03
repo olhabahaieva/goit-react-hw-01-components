@@ -13,9 +13,11 @@ const Profile = () => {
       alt={username}
       className={css.avatar}
     />
-    <p className="name">{username}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
+    <div className={css.basicInfo}>
+      <p className="name">{username}</p>
+      <p className={css.tag}>@{tag}</p>
+      <p className={css.location}>{location}</p>
+    </div>
   </div>
 
   <ul className="stats">

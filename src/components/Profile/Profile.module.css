@@ -4,15 +4,31 @@
   height: 800px;
   background-color: white;
   padding: 25px;
+  
 }
 
-.description {
+.basicInfo{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #122236;
 }
+
+.tag, .location{
+    margin-top: 10px;
+    font-size: 30px;
+    color: #7D8690;
+}
+
 .avatar {
   display: block;
   width: 250px;
   margin: 0 auto;
   margin-top: 200px;
   border-radius: 50%;
-  background-color: #cfd4da;
+  background-color: #F4F6F9;
+}
+
+.stats{
+    background-color: #F4F6F9;
 }
