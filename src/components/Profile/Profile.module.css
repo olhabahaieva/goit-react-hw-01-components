@@ -1,5 +1,18 @@
 /*General Component container*/
 .profile {
-    width: 450px;
-    height: 300px;
+  width: 450px;
+  height: 800px;
+  background-color: white;
+  padding: 25px;
+}
+
+.description {
+}
+.avatar {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 200px;
+  border-radius: 50%;
+  background-color: #cfd4da;
 }
