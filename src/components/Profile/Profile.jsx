@@ -14,24 +14,24 @@ const Profile = () => {
       className={css.avatar}
     />
     <div className={css.basicInfo}>
-      <p className="name">{username}</p>
+      <p className={css.name}>{username}</p>
       <p className={css.tag}>@{tag}</p>
       <p className={css.location}>{location}</p>
     </div>
   </div>
 
-  <ul className="stats">
-    <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{stats.followers}</span>
+  <ul className={css.stats}>
+    <li className={css.statsElement}>
+      <span className={css.label}>Followers</span>
+      <span className={css.quantity}>{stats.followers}</span>
     </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">{stats.views}</span>
+    <li className={css.statsElement}>
+      <span className={css.label}>Views</span>
+      <span className={css.quantity}>{stats.views}</span>
     </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{stats.likes}</span>
+    <li className={css.statsElement}>
+      <span className={css.label}>Likes</span>
+      <span className={css.quantity}>{stats.likes}</span>
     </li>
   </ul>
 </div>
