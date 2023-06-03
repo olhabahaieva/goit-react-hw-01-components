@@ -1,4 +1,5 @@
 import data from './user.json';
+import PropTypes from "prop-types";
 
 // import clsx from 'clsx';
 import css from './Profile.module.css';
@@ -35,6 +36,14 @@ const Profile = () => {
     </li>
   </ul>
 </div>
+}
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.string
 }
 
 export default Profile;
