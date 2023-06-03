@@ -1,4 +1,4 @@
-import data from './user.json';
+import user from './user.json';
 import PropTypes from "prop-types";
 
 // import clsx from 'clsx';
@@ -6,7 +6,7 @@ import css from './Profile.module.css';
 
 //Profile React component
 const Profile = () => {
-    const { username, tag, location, avatar, stats } = data;
+    const { username, tag, location, avatar, stats } = user;
     return <div className= {css.profile}>
   <div className={css.description}>
     <img
