@@ -1,18 +1,18 @@
 import data from './data.json';
-// import css from './Statistics.module.css';
+import css from './Statistics.module.css';
 
 const Statistics = () => {
   const limitedData = data.slice(0, 4); // Get the first 4 items
 
   return (
-    <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+    <section className={css.statistics}>
+      <h2 className={css.title}>Upload stats</h2>
 
-      <ul className="stat-list">
+      <ul className={css.statList}>
         {limitedData.map((item) => (
-          <li className="item" key={item.id}>
-            <span className="label">{item.label}</span>
-            <span className="percentage">{item.percentage}</span>
+          <li className={css.item} key={item.id}>
+            <span className={css.label}>{item.label}</span>
+            <span className={css.percentage}>{item.percentage}</span>
           </li>
         ))}
       </ul>
