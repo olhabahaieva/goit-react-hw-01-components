@@ -4,7 +4,7 @@ import './Profile.css';
 //Profile React component
 const Profile = () => {
     const { username, tag, location, avatar, stats } = data;
-    <div class="profile">
+    return <div class="profile">
   <div class="description">
     <img
       src={avatar}
