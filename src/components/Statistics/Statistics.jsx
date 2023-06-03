@@ -1,6 +1,6 @@
 import data from './data.json';
 import css from './Statistics.module.css';
-
+import PropTypes from 'prop-types';
 const Statistics = () => {
   const limitedData = data.slice(0, 4); // Get the first 4 items
 
@@ -19,5 +19,12 @@ const Statistics = () => {
     </section>
   );
 };
+
+Statistics.propTypes ={
+ title: PropTypes.string,
+ id: PropTypes.string.isRequired,
+ label: PropTypes.string.isRequired,
+ percentage: PropTypes.number.isRequired
+}
 
 export default Statistics;
