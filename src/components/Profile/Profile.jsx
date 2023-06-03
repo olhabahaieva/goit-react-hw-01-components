@@ -1,10 +1,11 @@
 import data from './user.json';
-import './Profile.module.css';
+import clsx from 'clsx';
+import css from './Profile.module.css';
 
 //Profile React component
 const Profile = () => {
     const { username, tag, location, avatar, stats } = data;
-    return <div className="profile">
+    return <div className= {clsx(css.profile)}>
   <div className="description">
     <img
       src={avatar}
