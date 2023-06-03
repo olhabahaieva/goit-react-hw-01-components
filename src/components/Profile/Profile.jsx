@@ -13,7 +13,7 @@ const Profile = () => {
         <img src={avatar} alt={username} className={css.avatar} />
         <div className={css.basicInfo}>
           <p className={css.name}>{username}</p>
-          <p className={css.tag}>@{tag}</p>
+          <p className={css.tag}>{tag}</p>
           <p className={css.location}>{location}</p>
         </div>
       </div>
@@ -37,11 +37,11 @@ const Profile = () => {
 };
 
 Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  stats: PropTypes.string.isRequired,
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.object,
 };
 
 export default Profile;
