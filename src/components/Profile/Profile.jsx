@@ -2,7 +2,7 @@ import data from './user.json';
 import './Profile.css';
 
 //Profile React component
-export const Profile = () => {
+const Profile = () => {
     const { username, tag, location, avatar, stats } = data;
     <div class="profile">
   <div class="description">
@@ -32,3 +32,5 @@ export const Profile = () => {
   </ul>
 </div>
 }
+
+export default Profile;
