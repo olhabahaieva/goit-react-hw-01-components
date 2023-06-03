@@ -1,4 +1,4 @@
-import data from './data.json';
+// import data from './data.json';
 // import css from './Statistics.module.css';
 
 const Statistics = () => {
