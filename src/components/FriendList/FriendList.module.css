@@ -23,6 +23,11 @@
     background-color: green;
 }
 
+.isOffline{
+    composes: isOnline;
+    background-color: red;
+}
+
 .avatar{
     width: 80px;
     background-color: #F3F6F9;
