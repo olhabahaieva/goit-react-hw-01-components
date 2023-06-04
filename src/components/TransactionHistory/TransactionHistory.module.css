@@ -1,0 +1,31 @@
+.transactionContainer {
+  margin-top: 80px;
+  background-color: white;
+  font-size: 18px;
+  box-shadow: 0px 2px 12px -1px rgba(188,192,194,1);
+  border-radius: 15px;
+}
+
+.transactionHeader tr{
+  background-color: #00bdd5;
+  color: white;
+  border-radius: 15px;
+}
+
+table th{
+    padding: 10px;
+    border-radius-top-left: 8px;
+}
+
+.tbody tr:nth-child(2n), tbody tr:nth-child(2n- 1){
+    background-color: #ECF1F3;
+}
+
+.body{
+    padding: 50px;
+}
+
+td{
+    padding: 10px 60px;
+}
+

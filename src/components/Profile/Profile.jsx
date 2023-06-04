@@ -1,7 +1,5 @@
 import user from './user.json';
 import PropTypes from 'prop-types';
-
-// import clsx from 'clsx';
 import css from './Profile.module.css';
 
 //Profile React component
