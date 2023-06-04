@@ -1,5 +1,6 @@
 import Profile  from "./Profile";
-import Statistics from "./Statistics/";
+import Statistics from "./Statistics";
+import FriendList from "./FriendList";
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
     >
       <Profile/>
       <Statistics/>
+      <FriendList/>
     </div>
   );
 };
