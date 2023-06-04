@@ -3,13 +3,11 @@
   background-color: white;
   font-size: 18px;
   box-shadow: 0px 2px 12px -1px rgba(188,192,194,1);
-  border-radius: 15px;
 }
 
 .transactionHeader tr{
   background-color: #00bdd5;
   color: white;
-  border-radius: 15px;
 }
 
 table th{
