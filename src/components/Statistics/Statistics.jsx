@@ -20,11 +20,14 @@ const Statistics = () => {
   );
 };
 
-Statistics.propTypes ={
- title: PropTypes.string,
- id: PropTypes.string,
- label: PropTypes.string,
- percentage: PropTypes.number
-}
+Statistics.propTypes = {
+  limitedData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number
+    })
+  )
+};
 
 export default Statistics;
