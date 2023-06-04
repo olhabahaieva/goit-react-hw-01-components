@@ -1,11 +1,10 @@
-import data from './friends.json';
 import css from './FriendList.module.css';
 import PropTypes from 'prop-types';
 
-const FriendList = () => {
+const FriendList = ({ friends }) => {
   return (
     <ul className={css.friendList}>
-      {data.map(friend => {
+      {friends.map((friend) => {
         let statusClass = friend.isOnline ? css.isOnline : css.isOffline;
 
         return (
@@ -27,12 +26,14 @@ const FriendList = () => {
 };
 
 FriendList.propTypes = {
-    friend: PropTypes.shape({
-        avatar: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
-        isOnline: PropTypes.bool.isRequired,
-        id: PropTypes.number.isRequired,
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
     })
+  ),
 };
 
 export default FriendList;
