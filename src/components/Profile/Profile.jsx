@@ -1,10 +1,9 @@
-import user from './user.json';
 import PropTypes from 'prop-types';
 import css from './Profile.module.css';
 
 //Profile React component
-const Profile = () => {
-  const { username, tag, location, avatar, stats } = user;
+const Profile = props => {
+  const { username, tag, location, avatar, stats } = props;
   return (
     <div className={css.profile}>
       <div className={css.description}>
